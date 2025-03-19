@@ -1,0 +1,134 @@
+// https://www.flaticon.com/free-animated-icon/plug-and-play_10607619
+// https://iconscout.com/lottie-animations/socket
+
+$family-base: "Noto Sans", serif;
+$brand: #F11431;
+$custom-headings-color: #181818;
+
+@use "bootstrap/scss/bootstrap" as * with (
+  $primary: $brand,
+  $secondary: #6c757d,
+  $success: #1ab69d,
+
+  $font-family-base: $family-base,
+  $h1-font-size: 50px,
+  $h2-font-size: 36px,
+  $h3-font-size: 28px,
+  $h4-font-size: 20px,
+  $h5-font-size: 18px,
+  $h6-font-size: 16px,
+  $headings-font-weight: 700,
+
+  $min-contrast-ratio: 2,
+
+  $headings-color: $custom-headings-color,
+
+  $input-btn-padding-y-lg: 1rem,
+  $input-btn-padding-x-lg: 2rem,
+  $input-btn-font-size-lg: 1rem,
+
+  $navbar-padding-y: 25px,
+  $navbar-light-hover-color: $brand,
+  $navbar-light-active-color: $brand,
+  $navbar-light-color: $custom-headings-color,
+  $navbar-nav-link-padding-x: 26px,
+  $nav-link-font-weight: bold,
+  $nav-link-font-size: 18px,
+  $nav-link-hover-color: $brand,
+
+  $card-border-width: 0,
+  $card-spacer-y: 2rem,
+  $card-spacer-x: 2rem,
+
+  $accordion-border-width: 0,
+  $accordion-button-padding-x: 30px,
+  $accordion-button-padding-y: 20px,
+  //$accordion-border-radius: 10px,
+);
+
+@use "scss/vendors/angular";
+@use "scss/vendors/primeng/primeng";
+
+@use "scss/layouts/header";
+@use "scss/layouts/footer";
+
+@use "scss/pages/home";
+
+@mixin font-icon() {
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
+}
+
+[data-bs-theme="light"] {
+  --body-bg: #f7f8fa;
+  --body-secondary-bg: #e9ecef;
+}
+
+[data-bs-theme="dark"] {
+  --body-bg: #11150f;
+  --body-secondary-bg: #343a40;
+  --bs-tertiary-bg: #222223;
+}
+
+:root {
+  --header-nav-h: 45px;
+  --footer-menu-h: 90px;
+
+  touch-action: pan-x pan-y;
+  height: var(--window-height);
+}
+
+body {
+  min-height: var(--window-height);
+  background-color: var(--body-bg);
+}
+
+.section {
+  padding: 80px 0;
+}
+
+.section-title {
+  margin-bottom: 30px;
+
+  &:after {
+    @include font-icon();
+    content: "\e912";
+    color: $brand;
+    font-size: 20px;
+    display: block;
+    margin-top: 12px;
+  }
+}
+
+.accordion {
+  .accordion-item {
+    box-shadow: 0 10px 50px 0 rgba(26, 46, 85, .1);
+    margin-bottom: 30px;
+    @include border-radius(10px);
+
+    .accordion-header {
+      .accordion-button {
+        font-weight: $font-weight-bold;
+        background-color: transparent;
+        @include border-radius(10px);
+
+        &[aria-expanded="true"] {
+          background-color: $brand;
+          color: #ffffff;
+          @include border-bottom-radius(0);
+
+          &:after {
+            filter: brightness(0) invert(1);
+          }
+        }
+      }
+    }
+  }
+}

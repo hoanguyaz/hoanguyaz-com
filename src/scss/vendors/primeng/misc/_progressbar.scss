@@ -1,0 +1,14 @@
+.p-indeterminate-top {
+  .p-progressbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: var(--bs-backdrop-zindex) - 1;
+    height: 3px;
+
+    .p-progressbar-value {
+      background-color: var(--bs-primary);
+    }
+  }
+}

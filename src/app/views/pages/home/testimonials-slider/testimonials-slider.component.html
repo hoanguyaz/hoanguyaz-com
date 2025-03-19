@@ -1,0 +1,56 @@
+<swiper-container
+  loop="true"
+  pagination="true"
+  space-between="-30"
+  grab-cursor="true"
+  initial-slide="1"
+  slides-per-view="auto"
+  centered-slides="true"
+  effect="coverflow"
+  coverflow-effect-rotate="50"
+  coverflow-effect-stretch="0"
+  coverflow-effect-depth="800"
+  coverflow-effect-modifier="3"
+  coverflow-effect-slide-shadows="true"
+>
+  @for (testimonial of testimonials; track testimonial.name) {
+    <swiper-slide>
+      <div class="card card-testimonial">
+        <div class="card-body">
+          <div class="testimonial-avatar">
+            <img class="object-fit-cover rounded-circle" [ngSrc]="testimonial.image" width="70" height="70"
+                 alt="">
+            <i class="icon-26"></i>
+          </div>
+          <div class="card-title">{{ testimonial.name }}</div>
+          <p>{{ testimonial.content }}</p>
+        </div>
+      </div>
+    </swiper-slide>
+  }
+</swiper-container>
+
+<!--
+grab-cursor="true"
+centered-slides="true"
+slides-per-view="2.3"
+loop="true"
+pagination="true"
+pagination-clickable="true"
+effect="coverflow"
+coverflow-effect-rotate="0"
+coverflow-effect-stretch="0"
+coverflow-effect-depth="400"
+coverflow-effect-modifier="4.3"
+coverflow-effect-slide-shadows="false"
+slides-per-view="4"
+loop="true"
+pagination="true"
+pagination-clickable="true"
+space-between="30"
+effect="coverflow"
+coverflow-effect-rotate="0"
+coverflow-effect-stretch="0"
+coverflow-effect-depth="400"
+coverflow-effect-modifier="4.3"
+coverflow-effect-slide-shadows="false"-->

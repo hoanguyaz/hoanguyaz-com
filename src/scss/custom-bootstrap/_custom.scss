@@ -1,0 +1,14 @@
+// Import your variables first
+@use "variables" as *;
+
+// Then import Bootstrap components
+@use "bootstrap/scss/root" as *;
+@use "bootstrap/scss/reboot" as *;
+@use "bootstrap/scss/type" as *;
+@use "bootstrap/scss/images" as *;
+@use "bootstrap/scss/containers" as *;
+@use "bootstrap/scss/grid" as *;
+@use "bootstrap/scss/buttons" as *;
+@use "bootstrap/scss/nav" as *;
+@use "bootstrap/scss/navbar" as *;
+// Add other components as needed
