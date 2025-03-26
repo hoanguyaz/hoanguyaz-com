@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { ParallaxItemDirective } from '@shared/directives/parallax-item.directive';
 import { NgbAccordionModule } from '@ng-bootstrap/ng-bootstrap';
-import { TestimonialsSliderComponent } from '@pages/home/testimonials-slider/testimonials-slider.component';
-
+import { TestimonialsSliderComponent } from '@partials/testimonials-slider/testimonials-slider.component';
+import { SectionCoursesComponent } from '@partials/section-courses/section-courses.component';
 
 @Component({
   selector: 'app-home',
@@ -11,7 +11,8 @@ import { TestimonialsSliderComponent } from '@pages/home/testimonials-slider/tes
     RouterLink,
     ParallaxItemDirective,
     NgbAccordionModule,
-    TestimonialsSliderComponent
+    TestimonialsSliderComponent,
+    SectionCoursesComponent
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',

@@ -1,14 +1,91 @@
-// Import your variables first
-@use "variables" as *;
+@use "bootstrap/scss/bootstrap" as *;
 
-// Then import Bootstrap components
-@use "bootstrap/scss/root" as *;
-@use "bootstrap/scss/reboot" as *;
-@use "bootstrap/scss/type" as *;
-@use "bootstrap/scss/images" as *;
-@use "bootstrap/scss/containers" as *;
-@use "bootstrap/scss/grid" as *;
-@use "bootstrap/scss/buttons" as *;
-@use "bootstrap/scss/nav" as *;
-@use "bootstrap/scss/navbar" as *;
-// Add other components as needed
+// Mixin để tạo các lớp border responsive bổ sung cho Bootstrap
+@mixin responsive-borders() {
+  // Sử dụng các grid breakpoints của Bootstrap
+  $breakpoints: $grid-breakpoints !default;
+
+  // Sử dụng các biến border của Bootstrap
+  $border-width: $border-width !default;
+  $border-color: $border-color !default;
+  $border-style: solid !default;
+
+  // Map các cạnh border với thuộc tính CSS tương ứng
+  $border-sides: (
+    'top': 'top',
+    'end': 'right',
+    'bottom': 'bottom',
+    'start': 'left'
+  ) !default;
+
+  // Lưu ý: Bootstrap đã có các lớp .border-{side} cơ bản
+  // Chúng ta chỉ tạo các lớp responsive mà Bootstrap chưa cung cấp
+
+  // Loop qua từng breakpoint
+  @each $breakpoint, $width in $breakpoints {
+    @if $breakpoint != 'xs' {
+      @include media-breakpoint-up($breakpoint) {
+        @each $key, $side in $border-sides {
+          // Tạo lớp border responsive cho từng cạnh
+          .border-#{$key}-#{$breakpoint} {
+            border-#{$side}: $border-width $border-style $border-color !important;
+          }
+
+          // Tạo lớp để loại bỏ border responsive cho từng cạnh
+          .border-#{$key}-#{$breakpoint}-0 {
+            border-#{$side}: 0 !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Mixin cho phép thêm border cho một cạnh cụ thể tại một breakpoint cụ thể
+@mixin responsive-border($side, $breakpoint, $width: null, $style: null, $color: null) {
+  // Xác định các giá trị mặc định từ Bootstrap nếu không được cung cấp
+  $border-width-value: if($width, $width, $border-width);
+  $border-style-value: if($style, $style, solid);
+  $border-color-value: if($color, $color, $border-color);
+
+  // Map các cạnh border với thuộc tính CSS tương ứng
+  $border-sides: (
+    'top': 'top',
+    'end': 'right',
+    'bottom': 'bottom',
+    'start': 'left'
+  );
+
+  $actual-side: map-get($border-sides, $side);
+
+  @if $breakpoint == 'xs' {
+    border-#{$actual-side}: $border-width-value $border-style-value $border-color-value !important;
+  } @else {
+    @include media-breakpoint-up($breakpoint) {
+      border-#{$actual-side}: $border-width-value $border-style-value $border-color-value !important;
+    }
+  }
+}
+
+// Mixin để loại bỏ border tại một breakpoint cụ thể
+@mixin responsive-border-remove($side, $breakpoint) {
+  // Map các cạnh border với thuộc tính CSS tương ứng
+  $border-sides: (
+    'top': 'top',
+    'end': 'right',
+    'bottom': 'bottom',
+    'start': 'left'
+  );
+
+  $actual-side: map-get($border-sides, $side);
+
+  @if $breakpoint == 'xs' {
+    border-#{$actual-side}: 0 !important;
+  } @else {
+    @include media-breakpoint-up($breakpoint) {
+      border-#{$actual-side}: 0 !important;
+    }
+  }
+}
+
+@include responsive-borders();

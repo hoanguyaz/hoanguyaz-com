@@ -1,0 +1,192 @@
+[
+  {
+    "id": 1,
+    "name": "Tiếng Trung nhập môn A1",
+    "slug": "tieng-trung-nhap-mon-a1",
+    "level": "Nhập môn",
+    "target": "Người mới bắt đầu",
+    "duration": "8 tuần",
+    "schedule": "3 buổi/tuần (1.5h/buổi)",
+    "price": "2.200.000 VND",
+    "features": [
+      "Học bảng chữ cái & phát âm chuẩn",
+      "300 từ vựng cơ bản",
+      "20 mẫu câu giao tiếp thiết yếu",
+      "Học qua hình ảnh và bài hát",
+      "App học tập riêng"
+    ],
+    "description": "Xây dựng nền tảng tiếng Trung vững chắc từ con số 0",
+    "image": "/assets/images/course.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Tiếng Trung giao tiếp cơ bản",
+    "slug": "tieng-trung-giao-tiep-co-ban",
+    "level": "Sơ cấp",
+    "target": "Người đi du lịch/định cư",
+    "duration": "10 tuần",
+    "schedule": "2 buổi/tuần (2h/buổi)",
+    "price": "2.800.000 VND",
+    "features": [
+      "50 tình huống giao tiếp thực tế",
+      "Luyện phản xạ qua hội thoại",
+      "Học qua video tình huống",
+      "Sửa lỗi phát âm 1:1",
+      "Tặng sổ tay từ vựng"
+    ],
+    "description": "Tự tin giao tiếp những chủ đề cơ bản trong cuộc sống hàng ngày",
+    "image": "/assets/images/course.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Luyện thi HSK 3",
+    "slug": "luyen-thi-hsk-3",
+    "level": "Sơ trung cấp",
+    "target": "Học viên cần chứng chỉ HSK3",
+    "duration": "12 tuần",
+    "schedule": "3 buổi/tuần (2h/buổi)",
+    "price": "3.200.000 VND",
+    "features": [
+      "Giáo trình chuẩn HSK",
+      "8 đề thi thử mô phỏng",
+      "Chiến thuật làm bài thi",
+      "Chữa bài writing 1:1",
+      "Cam kết đầu ra 180+"
+    ],
+    "description": "Lộ trình tối ưu đạt chứng chỉ HSK3 trong 3 tháng",
+    "image": "/assets/images/course.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Tiếng Trung văn phòng",
+    "slug": "tieng-trung-van-phong",
+    "level": "Trung cấp",
+    "target": "Nhân viên văn phòng",
+    "duration": "10 tuần",
+    "schedule": "2 buổi/tuần (2h/buổi)",
+    "price": "3.500.000 VND",
+    "features": [
+      "Giao tiếp trong môi trường công sở",
+      "Viết email, báo cáo",
+      "Từ vựng chuyên ngành",
+      "Case study thực tế",
+      "Học với giảng viên doanh nghiệp"
+    ],
+    "description": "Làm chủ tiếng Trung trong công việc văn phòng",
+    "image": "/assets/images/course.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Tiếng Trung thương mại quốc tế",
+    "slug": "tieng-trung-thuong-mai-quoc-te",
+    "level": "Cao cấp",
+    "target": "Doanh nhân, quản lý",
+    "duration": "16 tuần",
+    "schedule": "3 buổi/tuần (2h/buổi)",
+    "price": "5.500.000 VND",
+    "features": [
+      "Đàm phán hợp đồng quốc tế",
+      "Thuật ngữ chuyên ngành",
+      "Văn hóa giao tiếp kinh doanh",
+      "Học với CEO người Trung",
+      "Thực hành tình huống thật"
+    ],
+    "description": "Nâng tầm đàm phán thương mại với đối tác Trung Quốc",
+    "image": "/assets/images/course.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Tiếng Trung du lịch - ẩm thực",
+    "slug": "tieng-trung-du-lich-am-thuc",
+    "level": "Sơ cấp",
+    "target": "Người yêu ẩm thực Trung Hoa",
+    "duration": "6 tuần",
+    "schedule": "2 buổi/tuần (1.5h/buổi)",
+    "price": "2.000.000 VND",
+    "features": [
+      "100+ từ vựng ẩm thực",
+      "Đặt món tại nhà hàng",
+      "Mặc cả khi mua sắm",
+      "Học qua video ẩm thực",
+      "Tặng sổ tay món ngon"
+    ],
+    "description": "Trải nghiệm ẩm thực Trung Hoa trọn vẹn qua ngôn ngữ",
+    "image": "/assets/images/course.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Luyện phát âm chuẩn Bắc Kinh",
+    "slug": "luyen-phat-am-chuan-bac-kinh",
+    "level": "Mọi trình độ",
+    "target": "Học viên muốn chuẩn hóa phát âm",
+    "duration": "4 tuần",
+    "schedule": "3 buổi/tuần (1h/buổi)",
+    "price": "1.500.000 VND",
+    "features": [
+      "Hệ thống phiên âm chuẩn",
+      "Sửa lỗi phát âm cá nhân",
+      "Luyện ngữ điệu tự nhiên",
+      "Phần mềm phân tích giọng nói",
+      "Học với giáo viên bản ngữ"
+    ],
+    "description": "Chuẩn hóa phát âm tiếng Trung như người Bắc Kinh",
+    "image": "/assets/images/course.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Tiếng Trung qua phim ảnh",
+    "slug": "tieng-trung-qua-phim-anh",
+    "level": "Trung cấp",
+    "target": "Người yêu điện ảnh Trung Quốc",
+    "duration": "8 tuần",
+    "schedule": "2 buổi/tuần (2h/buổi)",
+    "price": "2.500.000 VND",
+    "features": [
+      "Phân tích 10 bộ phim đời thực",
+      "Học tiếng lóng, thành ngữ",
+      "Luyện nghe hiểu tốc độ thật",
+      "Thảo luận nội dung phim",
+      "Tặng thư viện phim chọn lọc"
+    ],
+    "description": "Học tiếng Trung tự nhiên qua những bộ phim đình đám",
+    "image": "/assets/images/course.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Tiếng Trung trẻ em (6-10 tuổi)",
+    "slug": "tieng-trung-tre-em-6-10-tuoi",
+    "level": "Nhập môn",
+    "target": "Trẻ em người Việt",
+    "duration": "12 tuần",
+    "schedule": "3 buổi/tuần (1h/buổi)",
+    "price": "2.200.000 VND",
+    "features": [
+      "Học qua truyện tranh tương tác",
+      "Trò chơi ngôn ngữ vui nhộn",
+      "Bài hát thiếu nhi Trung Quốc",
+      "Giáo viên kinh nghiệm với trẻ em",
+      "Báo cáo học tập hàng tuần"
+    ],
+    "description": "Giúp trẻ làm quen tiếng Trung một cách tự nhiên và hứng thú",
+    "image": "/assets/images/course.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Khóa học cấp tốc đi xuất khẩu lao động",
+    "slug": "khoa-hoc-cap-toc-di-xuat-khau-lao-dong",
+    "level": "Thực dụng",
+    "target": "Người chuẩn bị đi XKLĐ",
+    "duration": "6 tuần",
+    "schedule": "5 buổi/tuần (3h/buổi)",
+    "price": "4.000.000 VND",
+    "features": [
+      "300 câu giao tiếp công xưởng",
+      "Từ vựng chuyên ngành",
+      "Xử lý tình huống khẩn cấp",
+      "Văn hóa làm việc tại Trung Quốc",
+      "Hỗ trợ giấy tờ phỏng vấn"
+    ],
+    "description": "Trang bị kỹ năng ngôn ngữ thiết yếu cho lao động tại Trung Quốc",
+    "image": "/assets/images/course.jpg"
+  }
+]

@@ -1,1 +1,117 @@
-<p>contact works!</p>
+<app-section-head [title]="title"></app-section-head>
+
+<section class="section section-bg">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+
+      </div>
+      <div class="col-lg-6"></div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-8 text-center mb-5">
+        <h2 class="fw-bold mb-3">Kết nối với Hoa Ngữ YAZ</h2>
+        <p class="lead">Chúng tôi luôn sẵn sàng hỗ trợ bạn 24/7 qua các kênh trực tuyến</p>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <!-- Form liên hệ -->
+      <div class="col-lg-6">
+        <div class="card shadow-sm h-100">
+          <div class="card-body p-4">
+            <h2 class="h4 mb-4"><i class="bi bi-envelope-paper me-2"></i>Gửi tin nhắn</h2>
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Họ và tên</label>
+                <input type="text" class="form-control" id="name" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="form-label">Số điện thoại</label>
+                <input type="tel" class="form-control" id="phone">
+              </div>
+              <div class="mb-3">
+                <label for="course" class="form-label">Khóa học quan tâm</label>
+                <select class="form-select" id="course">
+                  <option selected>Chọn khóa học</option>
+                  <option>Tiếng Trung giao tiếp</option>
+                  <option>Luyện thi HSK</option>
+                  <option>Tiếng Trung thương mại</option>
+                  <option>Khác</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Nội dung</label>
+                <textarea class="form-control" id="message" rows="4" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary w-100 py-2">
+                <i class="bi bi-send me-2"></i>Gửi liên hệ
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Thông tin liên hệ online -->
+      <div class="col-lg-6">
+        <div class="card shadow-sm h-100">
+          <div class="card-body p-4">
+            <h2 class="h4 mb-4"><i class="bi bi-headset me-2"></i>Hỗ trợ trực tuyến</h2>
+
+            <div class="contact-method mb-4">
+              <div class="icon-circle bg-primary text-white mb-3">
+                <i class="bi bi-whatsapp fs-4"></i>
+              </div>
+              <h3 class="h5">Chat WhatsApp</h3>
+              <p class="text-muted">Hỗ trợ nhanh 24/7</p>
+              <a href="https://wa.me/84123456789" class="btn btn-outline-success">
+                <i class="bi bi-whatsapp me-2"></i>Chat ngay
+              </a>
+            </div>
+
+            <div class="contact-method mb-4">
+              <div class="icon-circle bg-danger text-white mb-3">
+                <i class="bi bi-envelope fs-4"></i>
+              </div>
+              <h3 class="h5">Email</h3>
+              <p class="text-muted">Phản hồi trong 12 giờ</p>
+              <a href="mailto:info@hoanguyaz.com" class="btn btn-outline-primary">
+                <i class="bi bi-envelope me-2"></i>info&#64;hoanguyaz.com
+              </a>
+            </div>
+
+            <div class="contact-method">
+              <div class="icon-circle bg-info text-white mb-3">
+                <i class="bi bi-calendar-check fs-4"></i>
+              </div>
+              <h3 class="h5">Đặt lịch tư vấn</h3>
+              <p class="text-muted">Tư vấn 1-1 với giáo viên</p>
+              <button class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#scheduleModal">
+                <i class="bi bi-calendar me-2"></i>Đặt lịch ngay
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Modal đặt lịch -->
+<div class="modal fade" id="scheduleModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Đặt lịch tư vấn</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Nội dung form đặt lịch -->
+      </div>
+    </div>
+  </div>
+</div>

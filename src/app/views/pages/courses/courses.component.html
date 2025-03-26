@@ -1,1 +1,21 @@
-<p>courses works!</p>
+<app-section-head [title]="title"></app-section-head>
+
+<section class="section section-bg">
+  <div class="container">
+    <div class="row row-course-type">
+      @for (course of courses; track course.slug) {
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="card card-course-type">
+            <img [src]="course.image" class="card-img-top" alt="{{ course.name }}">
+            <div class="card-body">
+              <h5 class="card-title">{{ course.name }}</h5>
+              <p class="text-small"><i class="icon-24"></i> {{ course.duration }}</p>
+              <p class="card-text">{{ course.description }}</p>
+              <a [routerLink]="['courses', course.slug]" class="btn btn-primary">Xem chi tiết</a>
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>

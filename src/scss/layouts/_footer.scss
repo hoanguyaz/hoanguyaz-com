@@ -1,8 +1,9 @@
 @use "bootstrap/scss/bootstrap" as *;
 
 .footer {
+  margin-top: auto;
   background-color: #1c1c1c;
-  padding: 85px 0px 0 0px;
+  padding: 85px 0 0 0;
   display: block;
   color: #f1f1f1;
   background-image: url('/assets/images/bg-footer.webp');

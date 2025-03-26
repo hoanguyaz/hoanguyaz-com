@@ -1,0 +1,36 @@
+<swiper-container
+  loop="true"
+  nav="true"
+  grab-cursor="true"
+  pagination="true"
+  pagination-clickable="true"
+  space-between="24"
+  slides-per-view="1.2"
+  breakpoints='{
+    "576": {
+      "slidesPerView": 2,
+      "spaceBetween": 20
+    },
+    "768": {
+      "slidesPerView": 3,
+      "spaceBetween": 20
+    },
+    "992": {
+      "slidesPerView": 4,
+      "spaceBetween": 24
+    }
+  }'>
+  @for (course of courses; track course.slug) {
+    <swiper-slide>
+      <div class="card card-course-type">
+        <img [src]="course.image" class="card-img-top" alt="{{ course.name }}">
+        <div class="card-body">
+          <h5 class="card-title">{{ course.name }}</h5>
+          <p class="text-small"><i class="icon-24"></i> {{ course.duration }}</p>
+          <p class="card-text">{{ course.description }}</p>
+          <a [routerLink]="['courses', course.slug]" class="btn btn-primary">Xem chi tiết</a>
+        </div>
+      </div>
+    </swiper-slide>
+  }
+</swiper-container>

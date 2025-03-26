@@ -12,6 +12,8 @@
 .header {
   display: block;
   box-shadow: 0 3px 9px rgb(0 0 0 / 5%);
+  position: relative;
+  z-index: $zindex-modal-backdrop - 1;
 
   @include media-breakpoint-up(lg) {
     .container-fluid {
